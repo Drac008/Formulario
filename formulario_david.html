@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1>Registo de usuario</h1>
+        <form action="Mailto: una prueba" method="post">
+            <br><br>
+            <label for="Nombres "> Nombres: </label> 
+            <input type="text" placeholder="Ingrese su/s nombre/s" required minlength="3" required maxlength="64" size="65">
+            <br><br>
+            <label for="Apellidos "> Apellidos: </label>
+            <input type="text" placeholder="Ingrese su/s apelledo/s" required minlength="3" required maxlength="64" size="65">
+            <br><br>
+            <label for="tipo"> Tipo de Documento </label>
+            <input type="radio" name = "documento" value="1"> TI 
+            <input type="radio" name = "documento" value="2"> CC 
+            <input type="radio" name = "documento" value="3"> NIT
+            <br><br>
+            <label for="Documento ">Documento: </label>
+            <input type="number" placeholder="Ingrese su numero de docuemtno" required minlength="8" required maxlength="11" size="12">
+            <br><br>
+            <label for="Direccion ">Direccion: </label>
+            <input pattern="^[A-Z0-9\s#\-\.]+" type = "text" placeholder="calle 52 #98-67" required maxlength="19">
+            <br><br>
+            <label for="Tel_Fijo">Telefono Fijo: </label>
+            <input type = "number" name="telefono fijo "placeholder="Ingrese su telefono fijo" size= 15>
+            <br><br>
+            <label for="Celular ">Telefono Celular: </label>
+            <input type = "number" name="telefono celular "placeholder="Ingrese su celular"   required max=10 size= 25>
+            <br><br>
+            <label for="Correo ">Correo Electrónico: </label>
+            <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-] +/.[A-Z]{2,4}$" type = "email" name="correo"placeholder="example@example.com" required >
+            <br><br>
+            <label for="Usuario">Usuario: </label>
+            <input type = "text" name="usuario "placeholder="Ingrese su Usuario"  required minlength=3 required maxlength=16 size= 65>
+            <br><br>
+            <label for="Contraseña ">Contraseña: </label>
+            <input pattern= "[A-Z]{1}+[a-z]{2}" type = "password" name="contraseña " placeholder="Ingrese su Contraseña"  min = 5 required maxlength=16  size= 62>
+            <br><br>
+            <label for="Fecha_ingreso">Fecha de Ingreso: </label>
+            <input type = "date" name="fecha " required min = "2026-03-01" max = "2026-04-01" size= 15>
+            <br><br>
+            <label for="celular">Hobbies: </label><br><br>
+            <input type = "checkbox" name="Pintar " value="no" > Deportes 
+            <input type = "checkbox" name="Cantar " value="no"> Bailar
+            <input type = "checkbox" name="Leer " value="no"> Escuchar Musica <br>
+            <input type = "checkbox" name="escuchar " value="no"> Nadar 
+            <input type = "checkbox" name="ejercicio " value="no"> Video Juegos <br>
+            <input type = "checkbox" name="otro " value="no"> otros <br>
+            <br><br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </body>
+</html>
